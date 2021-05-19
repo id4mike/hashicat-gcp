@@ -1,5 +1,5 @@
 module "network" {
-  source  = "github.com/id4mike/terraform-google-networkle"
+  source  = "github.com/id4mike/terraform-google-network"
   version = "2.5.0"
   # insert required variables here
   network_name = "gaurav_name"
