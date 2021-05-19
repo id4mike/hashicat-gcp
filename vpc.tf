@@ -1,10 +1,9 @@
 module "network" {
-  source  = "app.terraform.io/mikei-training/network/google"
+  source  = "github.com/id4mike/terraform-google-networkle"
   version = "2.5.0"
   # insert required variables here
   network_name = "gaurav_name"
-  project_id = "var.project"
-  
+  project_id = var.project
   subnets = [
   {
     subnet_name   = "gaurav-subnet"
